@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { Header } from './components/common';
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
+import LoginForm from './components/LoginForm'
 
 class App extends Component {
   componentWillMount() {
@@ -13,7 +14,7 @@ class App extends Component {
     return(
       <View>
         <Header headerText="Authentication" />
-        <Text>An app</Text>
+        <LoginForm />
       </View>
     );
   }
